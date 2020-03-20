@@ -1,3 +1,6 @@
+<?php
+    require_once('config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,15 @@
                 $phonenumber    = $_POST['phonenumber'];
                 $password       = $_POST['password'];
 
-                echo $firstname . " " . $lastname . " " . $email . " " . $phonenumber . " " . $password;
+                $sql = "INSERT INTO users(user_firstname, user_lastname, user_email, user_phone, user_pass) VALUES(?,?,?,?,?);";
+                $stmtinsert = $db->prepare($sql);
+                $result = $stmtinsert->execute([$firstname , $lastname, $email, $phonenumber, $password]);
+
+                if($result){
+                    echo 'successfully saved.';
+                }else{
+                    echo 'there were errors while saving the data.';
+                }
 
             }
         ?>
