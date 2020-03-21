@@ -43,25 +43,56 @@
                         <p>Fill up the form with correct values</p>
                         <hr class="mb-3">
                         <label for="firstname"><b>First Name</b></label>
-                        <input class="form-control" type="text" name="firstname" required>
+                        <input class="form-control" type="text" id="fn" name="firstname" required>
 
                         <label for="lastname"><b>Last Name</b></label>
-                        <input class="form-control" type="text" name="lastname" required>
+                        <input class="form-control" type="text" id="ln" name="lastname" required>
 
                         <label for="email"><b>Email Address</b></label>
-                        <input class="form-control" type="email" name="email" required>
+                        <input class="form-control" type="email" id="email" name="email" required>
 
                         <label for="phonenumber"><b>Phone Number</b></label>
-                        <input class="form-control" type="text" name="phonenumber" required>
+                        <input class="form-control" type="text" id="phone" name="phonenumber" required>
 
                         <label for="password"><b>Password</b></label>
-                        <input class="form-control" type="password" name="password" required>
+                        <input class="form-control" type="password" id="pass" name="password" required>
                         <hr class="mb-3">
-                        <input class="btn btn-primary" type="submit" name="submit" value="Sign UP">
+                        <input class="btn btn-primary" type="submit" id="register" name="submit" value="Sign UP">
                     </div>
                 </div>    
             </div>
         </form>
     </div>
+    <script src="JQuery/ajax.js"></script>
+    <script src="sweetalert/sweetalert.js"></script>
+    <script>
+        $(function(){
+            $('#register').click(function(e){
+
+                var valid = this.form.checkValidity();
+                if(valid){
+                    e.preventDefault();
+                    alert('true');
+                }else{
+                    alert('false');
+                }
+
+
+                 var firstname   = $('#fn').val();
+                 var lastname    = $('#ln').val();
+                 var email       = $('#email').val();
+                 var phone       = $('#phone').val();
+                 var pass        = $('#pass').val();
+                
+            });
+            //alert('keep grinding');
+            swal.fire({
+                'title': 'Hello World',
+                'text': 'This isfrom sweetalert2',
+                'type': 'succes'  
+            })
+        });
+    
+    </script>
 </body>
 </html>
