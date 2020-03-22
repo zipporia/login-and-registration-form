@@ -11,26 +11,7 @@
     
     <div>
         <?php
-            if(isset($_POST['submit'])){
-                echo "User submitted";
-
-                $firstname      = $_POST['firstname'];
-                $lastname       = $_POST['lastname'];
-                $email          = $_POST['email'];
-                $phonenumber    = $_POST['phonenumber'];
-                $password       = $_POST['password'];
-
-                $sql = "INSERT INTO users(user_firstname, user_lastname, user_email, user_phone, user_pass) VALUES(?,?,?,?,?);";
-                $stmtinsert = $db->prepare($sql);
-                $result = $stmtinsert->execute([$firstname , $lastname, $email, $phonenumber, $password]);
-
-                if($result){
-                    echo 'successfully saved.';
-                }else{
-                    echo 'there were errors while saving the data.';
-                }
-
-            }
+           
         ?>
     </div>
 
@@ -69,28 +50,51 @@
         $(function(){
             $('#register').click(function(e){
 
-                var valid = this.form.checkValidity();
+                var valid = this.form.checkValidity(); 
+                
                 if(valid){
+
+                var firstname   = $('#firstname').val();
+                var lastname    = $('#lastname').val();
+                var email       = $('#email').val();
+                var phone       = $('#phone').val();
+                var pass        = $('#pass').val();
+
                     e.preventDefault();
-                    alert('true');
+                    
+                    $.ajax({
+                        type: 'POST',
+                        url: 'process.php',
+                        data: {firstname: firstname, lastname: lastname, email: email, 
+                            phone: phone, pass: pass},
+                        success: function(data){
+                             //alert('keep grinding');
+                        swal.fire({
+                            'title': 'Successful',
+                            'text': data,
+                            'type': 'success'  
+                        })
+
+                        },
+                        error: function(data){
+                            swal.fire({
+                            'title': 'Error',
+                            'text': 'There were errors while saving the data',
+                            'type': 'Error'  
+                        })
+
+
+                        }
+                        
+                    });
+
                 }else{
-                    alert('false');
+                   
                 }
 
-
-                 var firstname   = $('#fn').val();
-                 var lastname    = $('#ln').val();
-                 var email       = $('#email').val();
-                 var phone       = $('#phone').val();
-                 var pass        = $('#pass').val();
-                
+                 
             });
-            //alert('keep grinding');
-            swal.fire({
-                'title': 'Hello World',
-                'text': 'This isfrom sweetalert2',
-                'type': 'succes'  
-            })
+           
         });
     
     </script>
