@@ -30,7 +30,16 @@
                         </div>
                         <input type="text" name="password" id="password" class="form-control input_pass" required>
                     </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="rememberme" class="custom-control-input customControlInline">
+                            <label class="custom-control-label" for="customControlInline">Remember me</label>
+                        </div>
+                    </div>
                 </form>
+            </div>
+            <div class="d-flex justify-content-center mt-3 login-container">
+                <button type="button" name="button" id="login" class="btn login-btn">Login</button>
             </div>
         </div>
     </div>
