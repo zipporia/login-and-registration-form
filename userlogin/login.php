@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap/bootstrapCDN.css">
+    <link rel="stylesheet" href="BootstrapCDN/BootstrapCDN.css">
     <link rel="stylesheet" href="fontAwesomeCDN/fontAwesomeCDN.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Project</title>
