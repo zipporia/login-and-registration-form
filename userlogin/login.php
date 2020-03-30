@@ -16,6 +16,22 @@
                     <img src="img/login_img.png" class="brand_logo" alt="Project Logo">
                 </div>
             </div>
+            <div class="d-flex justify-content-center form_container">
+                <form action="">
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></span>
+                        </div>
+                        <input type="text" name="username" id="username" class="form-control input_user" required>
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></span>
+                        </div>
+                        <input type="text" name="password" id="password" class="form-control input_pass" required>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
