@@ -41,6 +41,14 @@
             <div class="d-flex justify-content-center mt-3 login-container">
                 <button type="button" name="button" id="login" class="btn login-btn">Login</button>
             </div>
+            <div class="mt-4">
+                <div class="d-flex justify-content-center links">
+                    Don't have an account? <a href="registration.php" class="ml-2">Sign Up</a>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
