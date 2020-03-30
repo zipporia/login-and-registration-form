@@ -21,7 +21,7 @@ body, html{
     border-radius: 5px;
 }
 
-.brand_log_container{
+.brand_logo_container{
     position: absolute;
     height: 170px;
     width: 170px;
@@ -32,9 +32,9 @@ body, html{
     text-align: center;
 }
 
-.brand_log{
+.brand_logo{
     height: 150px;
-    width: 15px;
+    width: 150px;
     border-radius: 50%;
     border: 2px solid white;
 
