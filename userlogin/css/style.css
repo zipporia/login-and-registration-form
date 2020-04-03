@@ -26,7 +26,7 @@ body, html{
     position: absolute;
     height: 170px;
     width: 170px;
-    top: -105px;
+    top: -75px;
     border-radius: 50%;
     background: #60a3bc;
     padding: 10px;
@@ -40,17 +40,17 @@ body, html{
     border: 2px solid white;
 }
 
-.form-container{
+.form_container{
     margin-top: 100px;
 }
 
-.login-btn{
+.login_btn{
     width: 100%;
     background: #49a836 !important;
     color: white !important;
 }
 
-.login-btn:focus{
+.login_btn:focus{
     box-shadow: none !important;
     outline: 0px !important;
 }
@@ -60,14 +60,18 @@ body, html{
 }
 
 .input-group-text{
-    background: #1c9ce6 !important;
+    background: #1185c9 !important;
     color: white !important;
     border: 0 !important;
-
     border-radius: 0.25rem 0 0 0.25rem !important;
 }
+
 .input_user,
 .input_pass:focus{
     box-shadow: none !important;
     outline: 0px !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color: #0e11bb !important;
 }

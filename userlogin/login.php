@@ -39,7 +39,7 @@
                 </form>
             </div>
             <div class="d-flex justify-content-center mt-3 login-container">
-                <button type="button" name="button" id="login" class="btn login-btn">Login</button>
+                <button type="button" name="button" id="login" class="btn login_btn">Login</button>
             </div>
             <div class="mt-4">
                 <div class="d-flex justify-content-center links">
