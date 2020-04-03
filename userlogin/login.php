@@ -20,13 +20,13 @@
                 <form action="">
                     <div class="input-group mb-3">
                         <div class="input-group-append">
-                            <span class="input-group-text"><i class="fas fa-user"></span>
+                            <span class="input-group-text"><i class="fas fa-user-alt"></i></span>
                         </div>
                         <input type="text" name="username" id="username" class="form-control input_user" required>
                     </div>
                     <div class="input-group mb-2">
                         <div class="input-group-append">
-                            <span class="input-group-text"><i class="fas fa-user"></span>
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
                         <input type="text" name="password" id="password" class="form-control input_pass" required>
                     </div>
@@ -59,6 +59,7 @@
         crossorigin="anonymous">
     </script>
     <script src="BootstrapCDN/BootstrapCDN.js"></script>
+    <script src='css/fontawesome.js'></script>
 </body>
 </html>
 
