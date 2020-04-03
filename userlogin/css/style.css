@@ -39,3 +39,35 @@ body, html{
     border-radius: 50%;
     border: 2px solid white;
 }
+
+.form-container{
+    margin-top: 100px;
+}
+
+.login-btn{
+    width: 100%;
+    background: #49a836 !important;
+    color: white !important;
+}
+
+.login-btn:focus{
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.login_container{
+    padding: 0 2rem;
+}
+
+.input-group-text{
+    background: #1c9ce6 !important;
+    color: white !important;
+    border: 0 !important;
+
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus{
+    box-shadow: none !important;
+    outline: 0px !important;
+}
