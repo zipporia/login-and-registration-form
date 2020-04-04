@@ -61,7 +61,9 @@
     <script src='css/fontawesome.js'></script>
     <script>
         $(function(){
-            alert('alert');
+            $('#login').click(function(e){
+                alert('working')
+            });
         });
     </script>
 </body>
