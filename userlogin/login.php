@@ -60,6 +60,11 @@
     </script>
     <script src="BootstrapCDN/BootstrapCDN.js"></script>
     <script src='css/fontawesome.js'></script>
+    <script>
+        $(function(){
+            alert('alert');
+        });
+    </script>
 </body>
 </html>
 
