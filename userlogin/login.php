@@ -36,11 +36,11 @@
                             <label class="custom-control-label" for="customControlInline">Remember me</label>
                         </div>
                     </div>
-                </form>
             </div>
             <div class="d-flex justify-content-center mt-3 login_container">
                 <button type="button" name="button" id="login" class="btn login_btn">Login</button>
             </div>
+            </form>
             <div class="mt-4">
                 <div class="d-flex justify-content-center links">
                     Don't have an account? <a href="registration.php" class="ml-2">Sign Up</a>
