@@ -1,4 +1,3 @@
 <?php
 echo 'Keep Grinding';
-
 ?>

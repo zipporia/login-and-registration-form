@@ -66,7 +66,7 @@
                 var valid = this.form.checkValidity();
 
                 if(valid){
-                    var usernam = $('#username').val();
+                    var username = $('#username').val();
                     var password = $("#password").val();
                 }
 
