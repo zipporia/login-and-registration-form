@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="BootstrapCDN/BootstrapCDN.css">
-    <link rel="stylesheet" href="fontAwesomeCDN/fontAwesomeCDN.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Project</title>
 </head>
@@ -70,7 +70,7 @@
                     var password = $("#password").val();
                 }
 
-                e.prevenDefault();
+                e.preventDefault();
 
                 $.ajax({
                     type: 'POST',
@@ -80,7 +80,7 @@
                         alert('success');
                     },
                     error: function(data){
-                        alert('Error operation')
+                        alert('Error operation');
                     }
                 });
 
