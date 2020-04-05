@@ -70,6 +70,13 @@
                     var password = $("#password").val();
                 }
 
+                e.prevenDefault();
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'jslogin.php',
+                    data: {username: username, password: password}
+                });
 
             });
         });
