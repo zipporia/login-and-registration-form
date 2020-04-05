@@ -75,7 +75,13 @@
                 $.ajax({
                     type: 'POST',
                     url: 'jslogin.php',
-                    data: {username: username, password: password}
+                    data: {username: username, password: password},
+                    success: function(data){
+                        alert('success');
+                    },
+                    error: function(data){
+                        alert('Error operation')
+                    }
                 });
 
             });
