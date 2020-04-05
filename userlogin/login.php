@@ -62,7 +62,15 @@
     <script>
         $(function(){
             $('#login').click(function(e){
-                alert('working')
+                
+                var valid = this.form.checkValidity();
+
+                if(valid){
+                    var usernam = $('#username').val();
+                    var password = $("#password").val();
+                }
+
+
             });
         });
     </script>
