@@ -77,7 +77,7 @@
                     url: 'jslogin.php',
                     data: {username: username, password: password},
                     success: function(data){
-                        alert('success');
+                        alert(data);
                     },
                     error: function(data){
                         alert('Error operation');
