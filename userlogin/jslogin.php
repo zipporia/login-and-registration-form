@@ -1,14 +1,15 @@
 <?php
 require_once('config.php');
 
-echo 'Keep Grinding ';
+echo 'from login Keep Grinding ';
 
 $sql = "SELECT * FROM users";
 $stmtselect = $db->prepare($sql);
 $result = $stmtselect->execute([]);
 
 if($result){
-    echo 'you are login';
+    $user = $stmtselect->fetch(PDO::FETCH_ASSOC);
+    var_dump($user);
 }else{
     echo 'There were errors while connecting to database';
 }
