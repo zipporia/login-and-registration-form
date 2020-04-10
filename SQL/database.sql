@@ -11,3 +11,6 @@ CREATE TABLE users(
     user_pass varchar(50) NOT NULL
 
 );
+
+INSERT INTO users(user_firstname, user_lastname, user_email, user_phone, user_pass) 
+    VALUES("mark", "cornelio", "mark@gmail.com", "1234567","123");

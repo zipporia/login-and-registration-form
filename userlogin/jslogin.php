@@ -3,13 +3,20 @@ require_once('config.php');
 
 echo 'from login Keep Grinding ';
 
-$sql = "SELECT * FROM users";
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+$sql = "SELECT * FROM users WHERE email = ? and password = ? LIMIT 1";
 $stmtselect = $db->prepare($sql);
-$result = $stmtselect->execute([]);
+$result = $stmtselect->execute([$username, $password]);
 
 if($result){
     $user = $stmtselect->fetch(PDO::FETCH_ASSOC);
-    var_dump($user);
+    if($stmtselect->rowCount() > 0){
+        echo '1';
+    }else{
+        echo ' there no user for that combo';
+    }
 }else{
     echo 'There were errors while connecting to database';
 }
