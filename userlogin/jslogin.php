@@ -11,9 +11,9 @@ $result = $stmtselect->execute([$username, $password]);
 if($result){
     $user = $stmtselect->fetch(PDO::FETCH_ASSOC);
     if($stmtselect->rowCount() > 0){
-        var_dump($user);
+        echo 'from js login 1';
     }else{
-        echo ' there no user for that combo';
+        echo ' there no user for that account';
     }
 }else{
     echo 'There were errors while connecting to database';
