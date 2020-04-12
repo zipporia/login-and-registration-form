@@ -5,8 +5,8 @@ if(isset($_POST)){
     $firstname      = $_POST['firstname'];
     $lastname       = $_POST['lastname'];
     $email          = $_POST['email'];
-    $phonenumber    = $_POST['phonenumber'];
-    $password       = sha1($_POST['password']);
+    $phonenumber    = $_POST['phone'];
+    $password       = sha1($_POST['pass']);
 
     $sql = "INSERT INTO users(user_firstname, user_lastname, user_email, user_phone, user_pass) VALUES(?,?,?,?,?);";
     $stmtinsert = $db->prepare($sql);
