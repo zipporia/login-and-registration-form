@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('config.php');
 
 $username = $_POST['username'];
@@ -11,6 +12,7 @@ $result = $stmtselect->execute([$username, $password]);
 if($result){
     $user = $stmtselect->fetch(PDO::FETCH_ASSOC);
     if($stmtselect->rowCount() > 0){
+        $_SESSION['userlogin'] = $user;
         echo '1';
     }else{
         echo ' there no user for that account';
