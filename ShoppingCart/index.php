@@ -12,7 +12,28 @@
     
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row text-center py-5">
+            <div class="col-md-3 col-sm-6 my-3 my-md-0">
+                <form action="index.php" method="post">
+                    <div class="card shadow">
+                        <div>
+                            <img src="./image/headset.jpg" alt="image1" class="img-fluid card-img-top">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3 my-md-0">
+            
+            </div>
+            <div class="col-md-3 col-sm-6 my-3 my-md-0">
+            
+            </div>
+            <div class="col-md-3 col-sm-6 my-3 my-md-0">
+            
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
