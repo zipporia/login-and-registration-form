@@ -24,7 +24,17 @@
                             <h5 class="card-title">Head set</h5>
                             <h6>
                                 <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
                             </h6>
+                            <p class="card-text">
+                                text to build on the card
+                            </p>
+                            <h5>
+                                <span class="price">Php 799.75</span>
+                            </h5>
                         </div>
                     </div>
                 </form>
