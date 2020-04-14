@@ -36,7 +36,7 @@
                                 <small><s class="text-secondary">Php 999.75</s></small>
                                 <span class="price">Php 799.75</span>
                             </h5>
-                            <button type="submit" name="add">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+                            <button type="submit" class="btn btn-warning my-3" name="add">Add to Cart <i class="fas fa-shopping-cart"></i></button>
                         </div>
                     </div>
                 </form>
