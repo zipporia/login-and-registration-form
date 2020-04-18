@@ -30,4 +30,5 @@ function component(){
         </form>
     </div>
     ";
+    echo element;
 }
