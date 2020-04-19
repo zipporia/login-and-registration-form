@@ -20,9 +20,7 @@
     <div class="container">
         <div class="row text-center py-5">
             <?php
-            component();
-            component();
-            component();
+                component(productname:"Head Set", productprice: 1599.75, productimage:"./image/headset.png");
             ?>
         </div>
     </div>
