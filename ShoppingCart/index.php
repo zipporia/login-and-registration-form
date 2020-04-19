@@ -22,6 +22,7 @@
             <?php
                 component("Head Set", 1599.75, "./image/headset.png");
                 component("keyboard", 1199.75, "./image/keyboard.png");
+                component("Monitor", 3299.75, "./image/monitor.png");
             ?>
         </div>
     </div>
