@@ -21,6 +21,7 @@
         <div class="row text-center py-5">
             <?php
                 component("Head Set", 1599.75, "./image/headset.png");
+                component("keyboard", 1199.75, "./image/keyboard.png");
             ?>
         </div>
     </div>
