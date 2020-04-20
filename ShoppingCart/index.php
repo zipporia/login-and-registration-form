@@ -20,9 +20,9 @@
     <div class="container">
         <div class="row text-center py-5">
             <?php
-                component("Head Set", 1599.75, "./image/headset.png");
-                component("keyboard", 1199.75, "./image/keyboard.png");
-                component("Monitor", 3299.75, "./image/monitor.png");
+                component("Head Set", 1599.75, "./image/headset.png", 1899.75);
+                component("keyboard", 1199.75, "./image/keyboard.png", 1599.75);
+                component("Monitor", 3299.75, "./image/monitor.png", 4899.75);
             ?>
         </div>
     </div>
