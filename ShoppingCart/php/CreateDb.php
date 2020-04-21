@@ -35,5 +35,15 @@ class CreateDb{
         if(!$this->con){
             die("Connection failed:".mysqli_connect());
         }
+
+        //query
+        $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
+
+        // execute query
+        if(mysqli_query($this->con, $sql)){
+
+            $this->con = mysqli_connect($servername, $username, $password, $dbname);
+        }
+
     }
 }
