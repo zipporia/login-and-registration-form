@@ -19,4 +19,14 @@ class CreateDb{
         $username="root",
         $password=""
     )
+
+    {
+        $this->dbname = $dbname;
+        $this->tablename = $tablename;
+        $this->servername = $servername;
+        $this->username = $username;
+        $this->password = $password;
+
+        
+    }
 }
