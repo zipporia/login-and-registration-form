@@ -11,7 +11,7 @@ class CreateDb{
 
     // class constructor
 
-    public function _construct(
+    public function __construct(
 
         $dbname="Newdb",
         $tablename="Productdb",
@@ -54,7 +54,7 @@ class CreateDb{
 
 
             if(!mysqli_query($this->con, $sql)){
-                echo "Error creating table:".mysqli_error($this->con);
+                echo "Error creating table:" .mysqli_error($this->con);
             }
         }else{
             return false;
