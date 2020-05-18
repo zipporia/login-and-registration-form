@@ -60,4 +60,11 @@ class CreateDb{
             return false;
         }
     }
+
+
+    public function getdata(){
+        $sql = "SELECT * FROM $this->tablename";
+
+        $result = mysqli_query($this->con, $sql)
+    }
 }
