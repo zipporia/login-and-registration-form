@@ -11,7 +11,7 @@ class CreateDb{
 
     // class constructor
 
-    public function_constructor(
+    public function _construct(
 
         $dbname="Newdb",
         $tablename="Productdb",
@@ -46,7 +46,7 @@ class CreateDb{
             
             //sql to create new table
             $sql = "CREATE TABLE IF NOT EXISTS $tablename
-                    (id INT(11)NOT NULL AUTO_INCREMENT PRIMARY KEY
+                    (id INT(11)NOT NULL AUTO_INCREMENT PRIMARY KEY,
                     product_name VARCHAR(25)NOT NULL,
                     product_price FLOAT,
                     product_image VARCHAR(100)

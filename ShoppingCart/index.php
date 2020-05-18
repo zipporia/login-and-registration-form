@@ -1,10 +1,10 @@
 <?php
-    require_once ('php/CreateDb.php');
+    require_once ('./php/CreateDb.php');
     require_once ('./php/component.php');
 
 
     //create instance of Createdb class
-    $database=new CreateDb(dbname:"Productdb", tablename:"Producttb");
+$database = new CreateDb("Productdb", "Producttb");
 ?>
 
 <!DOCTYPE html>
