@@ -62,7 +62,7 @@ class CreateDb{
     }
 
     //get prodcut from the database
-    public function getData(){
+    public function getdata(){
         $sql = "SELECT * FROM $this->tablename";
 
         $result = mysqli_query($this->con, $sql);
