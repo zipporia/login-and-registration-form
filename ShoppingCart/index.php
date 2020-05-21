@@ -13,13 +13,16 @@
         //print_r($_POST['product_id']);
         if(isset($_SESSION['cart'])){
 
+
+            print_r($_SESSION['cart']);
         }else{
             $item_array = array(
                 'product_id' => $_POST['product_id']
             );
 
             // Create new session variable
-            
+            $_SESSION['cart'][0] = $item_array;
+            print_r($_SESSION['cart']);
         }
     }
 
