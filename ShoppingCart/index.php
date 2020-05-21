@@ -13,8 +13,16 @@
         //print_r($_POST['product_id']);
         if(isset($_SESSION['cart'])){
 
+            $item_array_id = array_column($_SESSION['cart'], "product_id");
+            print_r($item_array_id);
 
-            print_r($_SESSION['cart']);
+            if(in_array($_POST['product_id'], $item_array_id)){
+                echo "<script>alert('Product is already added in the cart..!')</script>";
+                echo "<script>window.location = 'index.php'</script>";
+            }else{
+
+            }
+
         }else{
             $item_array = array(
                 'product_id' => $_POST['product_id']
