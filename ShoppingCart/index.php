@@ -28,6 +28,7 @@
                 );
 
                 $_SESSION['cart'][$count] = $item_array;
+                print_r($_SESSION['cart']);
             }
 
         }else{
