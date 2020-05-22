@@ -20,7 +20,8 @@
                 echo "<script>alert('Product is already added in the cart..!')</script>";
                 echo "<script>window.location = 'index.php'</script>";
             }else{
-
+                
+                count($_SESSION['cart']);
             }
 
         }else{
